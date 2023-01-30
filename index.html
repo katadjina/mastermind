@@ -1,0 +1,621 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MasterMind</title>
+</head>
+
+    
+<body>
+
+
+<div class="All"> 
+
+
+    
+<div class="middleGameBorder">
+    <div class="infoClick"> 
+        <div class="subInfo"> INFO </div>
+        
+    </div>
+<div class="game">
+    <div class="container">
+        <div class="pc">
+            <div class="pc_up">
+                <div class="random c1" id="c1"><h1>?</h1></div>
+                <div class="random c2" id="c2"><h1>?</h1></div>
+                <div class="random c3" id="c3"><h1>?</h1></div>
+                <div class="random c4" id="c4"><h1>?</h1></div>
+            </div>
+        <div class="pc_down">
+            <button id="play" class="playBtn"> Play</button>
+        </div>
+    </div>
+
+    <div class="try1 currentRow " id="m1">
+
+        <div class="random r VisibilityY" id="tr_1_A" onclick="try1(this)"></div>
+        <div class="random r VisibilityY" id="tr_1_B" onclick="try1(this)"></div>
+        <div class="random r VisibilityY" id="tr_1_C" onclick="try1(this)"></div>
+        <div class="random r VisibilityY" id="tr_1_D" onclick="try1(this)"></div>
+        <div class="result dontShow" id="showA" >
+            <div class="resA" id="rA_1"></div>
+            <div class="resB" id="rB_1"></div>
+            <div class="resC" id="rC_1"></div>
+            <div class="resD" id="rD_1"></div>
+    </div>
+        <br>
+        <div>
+            <button class="valBtn" id="validate1" style="display: none" onclick="validate()"> Validate</button>
+        </div>
+        
+    </div>
+    <br>
+    <div class="try2" id="m2">
+        
+        <div class="random a1 VisibilityY" id="tr_2_A"  onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_2_B"  onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_2_C"  onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_2_D"  onclick="try1(this)"></div>
+        <div class="result dontShow" id="showB" >
+            <div class="resA" id="rA_2"></div>
+            <div class="resB" id="rB_2"></div>
+            <div class="resC" id="rC_2"></div>
+            <div class="resD" id="rD_2"></div>
+        </div>
+    </div>
+    <br>
+  
+    <div><button id="validate2" style="display: none" class="valBtn" onclick="validate()"> Validate</button></div>
+    
+    <div class="try3">
+        
+        <div class="random a1 VisibilityY" id="tr_3_A" onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_3_B" onclick="try1(this)"></div>
+        <div class="random a1 VidibilityY" id="tr_3_C" onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_3_D" onclick="try1(this)"></div>
+            <div class="result dontShow" id="showC" >
+                <div class="resA" id="rA_3"></div>
+                <div class="resB" id="rB_3"></div>
+                <div class="resC" id="rC_3"></div>
+                <div class="resD" id="rD_3"></div>
+        </div>
+    </div>
+    <br>
+
+     <div><button class="valBtn" id="validate3" class="valBtn" style="display: none" onclick="validate()"> Validate</button></div>
+   
+    <div class="try4">
+        
+        <div class="random a1 VisibilityY" id="tr_4_A"  onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_4_B"  onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_4_C"  onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_4_D"  onclick="try1(this)"></div>
+        <div class="result dontShow" id="showD" >
+            <div class="resA" id="rA_4"></div>
+            <div class="resB" id="rB_4"></div>
+            <div class="resC" id="rC_4"></div>
+            <div class="resD" id="rD_4"></div>
+        </div>
+    </div>
+    <br>
+    <div><button id="validate4" class="valBtn" style="display: none" onclick="validate()"> Validate</button></div>
+    <div class="try5">
+      
+        <div class="random a1 VisibilityY" id="tr_5_A"  onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_5_B"  onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_5_C"  onclick="try1(this)"></div>
+        <div class="random a1 VisibilityY" id="tr_5_D"  onclick="try1(this)"></div>
+        <div class="result dontShow" id="showE" >
+            <div class="resA" id="rA_5"></div>
+            <div class="resB" id="rB_5"></div>
+            <div class="resC" id="rC_5"></div>
+            <div class="resD" id="rD_5"></div>
+        </div>
+    </div>
+    <br>
+    <div><button id="validate5" class="valBtn" style="display: none" onclick="validate()"> Validate</button></div>
+
+
+
+    <div id="picker">
+        <div class="di1" id="red" style="background: red" onclick="choose(this)"></div>
+        <div class="di1" id="blue" style="background: blue"onclick="choose(this)"></div>
+        <div class="di1" id="green" style="background: green"onclick="choose(this)"></div>              
+        <div class="di1" id="yellow" style="background: yellow"onclick="choose(this)"></div>
+        <div class="di1" id="black" style="background: black" onclick="choose(this)"></div>
+        <div class="di1" id="orange" style="background: orange"onclick="choose(this)"></div>
+    </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+//1. Play button click
+
+let rnd1 = document.getElementById("c1");
+let rnd2 = document.getElementById("c2");
+let rnd3 = document.getElementById("c3");
+let rnd4 = document.getElementById("c4");
+
+
+let start = 0;
+
+let el_a, el_b, el_c, el_d;
+
+let compareList = [];
+
+let c = 4;
+
+let correctPosition = 0;
+let correctColors = 0;
+
+let lastTry = false;
+
+let gameplay = 1;
+
+
+//variables for the result cells:
+
+let mainCell;
+let resA;
+let resB;
+let resC;
+let resD;
+
+
+el_a = document.getElementById("tr_1_A");
+el_b = document.getElementById("tr_1_B");
+el_c = document.getElementById("tr_1_C");
+el_d = document.getElementById("tr_1_D");
+
+let col = ["red", "blue",  "green",  "yellow", "black", "orange"];
+let colList = [];
+let limit = col.length;
+let play = document.getElementById("play");
+
+
+play.addEventListener("click", () => {
+//First enable the button to validate user choice
+document.getElementById('validate1').style.display = "inline-block";
+    
+      el_a.classList.remove("VisibilityY");
+      el_b.classList.remove("VisibilityY");
+      el_c.classList.remove("VisibilityY");
+      el_d.classList.remove("VisibilityY");
+      play.style.display = "none";
+    
+    
+        do{
+            let n =  Math.floor(Math.random() * limit);
+            colList.push(col[n]);
+            console.log(n)
+            console.log(col[n])
+            col.splice(n, 1);
+            limit --;
+            
+            if (colList.length == 4){
+                play.disabled = "true";  //disable PLAY button
+                console.log(colList);
+                
+            }
+        }
+        while(colList.length < 4);
+    })
+//Assigning random colors to the cells
+
+
+
+//2. Color Picker
+
+let current;
+
+
+let red=document.getElementById("red").style.backgroundColor = "red";
+let green=document.getElementById("green").style.backgroundColor = "green";
+let blue=document.getElementById("blue").style.backgroundColor = "blue";;
+let yellow=document.getElementById("yellow").style.backgroundColor = "yellow";;
+let orange=document.getElementById("orange").style.backgroundColor = "orange";;
+let black=document.getElementById("black").style.backgroundColor = "black";;
+
+
+
+function choose(e){
+    current = e.style.backgroundColor;
+    console.log(current);
+}
+
+
+function try1(e){
+e.style.backgroundColor = current;
+}
+
+
+
+//function to show current result colors/positions
+
+function row_result(){
+if(correctColors < 5){
+    if(correctColors == 4){
+resA.classList.add("correctColor");
+resB.classList.add("correctColor");
+resC.classList.add("correctColor");
+resD.classList.add("correctColor");
+}
+if(correctColors == 3){
+resA.classList.add("correctColor");
+resB.classList.add("correctColor");
+resC.classList.add("correctColor");
+
+}
+if(correctColors == 2){
+resA.classList.add("correctColor");
+resB.classList.add("correctColor");
+
+}
+if(correctColors == 1){
+resA.classList.add("correctColor");
+
+}
+}
+
+if (correctPosition < 5){
+    if(correctPosition== 4){
+        resA.classList.add("correctPosition");
+        resB.classList.add("correctPosition");
+        resC.classList.add("correctPosition");
+        resC.classList.add("correctPosition");
+        }
+        if(correctPosition == 3){
+        resA.classList.add("correctPosition");
+        resB.classList.add("correctPosition");
+        resC.classList.add("correctPosition");
+        }
+        if(correctPosition == 2){
+        resA.classList.add("correctPosition");
+        resB.classList.add("correctPosition");
+        }
+        if(correctPosition == 1){
+        resA.classList.add("correctPosition");
+        }
+}
+
+            
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+//Function for the validate function:
+
+
+
+let game = 0;
+
+function nextRow(){
+    game++;
+
+    if(game == 1){
+        el_a = document.getElementById("tr_2_A");
+        el_b = document.getElementById("tr_2_B");
+        el_c = document.getElementById("tr_2_C");
+        el_d = document.getElementById("tr_2_D");
+        
+        el_a.classList.remove("VisibilityY");
+        el_b.classList.remove("VisibilityY");
+        el_c.classList.remove("VisibilityY");
+        el_d.classList.remove("VisibilityY");
+        document.getElementById("validate2").style.display="inline-block";
+
+       
+
+
+
+   //result row
+    mainCell = document.getElementById("showA").classList.remove("dontShow");
+    resA = document.getElementById("rA_1");
+    resB = document.getElementById("rB_1");
+    resC = document.getElementById("rC_1");
+    resD = document.getElementById("rD_1");
+
+    row_result();
+
+
+
+    }
+    if(game == 2){
+        el_a = document.getElementById("tr_3_A");
+        el_b = document.getElementById("tr_3_B");
+        el_c = document.getElementById("tr_3_C");
+        el_d = document.getElementById("tr_3_D");
+        
+        el_a.classList.remove("VisibilityY");
+        el_b.classList.remove("VisibilityY");
+        el_c.classList.remove("VisibilityY");
+        el_d.classList.remove("VisibilityY");
+        document.getElementById("validate3").style.display="inline-block";
+        document.getElementById("validate2").style.display="none";
+
+
+        mainCell = document.getElementById("showB").classList.remove("dontShow");
+        resA = document.getElementById("rA_2");
+        resB = document.getElementById("rB_2");
+        resC = document.getElementById("rC_2");
+        resD = document.getElementById("rD_2");
+        row_result();
+
+
+    }
+    if(game == 3){
+        el_a = document.getElementById("tr_4_A");
+        el_b = document.getElementById("tr_4_B");
+        el_c = document.getElementById("tr_4_C");
+        el_d = document.getElementById("tr_4_D");
+        
+        el_a.classList.remove("VisibilityY");
+        el_b.classList.remove("VisibilityY");
+        el_c.classList.remove("VisibilityY");
+        el_d.classList.remove("VisibilityY");
+        document.getElementById("validate4").style.display="inline-block";
+        document.getElementById("validate3").style.display="none";
+
+
+        mainCell = document.getElementById("showC").classList.remove("dontShow");
+        resA = document.getElementById("rA_3");
+        resB = document.getElementById("rB_3");
+        resC = document.getElementById("rC_3");
+        resD = document.getElementById("rD_3");
+        row_result();
+    }
+    if(game == 4){
+        el_a = document.getElementById("tr_5_A");
+        el_b = document.getElementById("tr_5_B");
+        el_c = document.getElementById("tr_5_C");
+        el_d = document.getElementById("tr_5_D");
+        
+        el_a.classList.remove("VisibilityY");
+        el_b.classList.remove("VisibilityY");
+        el_c.classList.remove("VisibilityY");
+        el_d.classList.remove("VisibilityY");
+        document.getElementById("validate5").style.display="inline-block";
+        document.getElementById("validate4").style.display="none";
+
+        mainCell = document.getElementById("showD").classList.remove("dontShow");
+        resA = document.getElementById("rA_4");
+        resB = document.getElementById("rB_4");
+        resC = document.getElementById("rC_4");
+        resD = document.getElementById("rD_4");
+
+       lastTry = true;
+
+       row_result();
+    }
+
+
+    
+}
+
+
+
+function resultActions(){
+    if (correctPosition != 4 && lastTry == false){
+        //blocking previous row & opening new currentRow
+        console.log(correctColors, "of your colors occur in the list");
+            el_a.classList.add("VisibilityY");
+            el_b.classList.add("VisibilityY");
+            el_c.classList.add("VisibilityY");
+            el_d.classList.add("VisibilityY");
+            console.log(el_a.classList);
+
+            nextRow();
+        
+    }
+    else{
+        el_a.classList.remove("VisibilityY");
+        el_b.classList.remove("VisibilityY");
+        el_c.classList.remove("VisibilityY");
+        el_d.classList.remove("VisibilityY");
+        document.getElementById("validate5").style.display="none";
+        
+        let r1 = colList[0];
+        let r2 = colList[1];
+        let r3 = colList[2];
+        let r4 = colList[3];
+    
+        rnd1.style.backgroundColor = r1;
+        rnd2.style.backgroundColor = r2;
+        rnd3.style.backgroundColor = r3;
+        rnd4.style.backgroundColor = r4;
+        alert("LOSER :( ");
+
+        rnd1.innerHTML = "";
+        rnd2.innerHTML = "";
+        rnd3.innerHTML = "";
+        rnd4.innerHTML = "";
+    }
+  
+}
+
+function colorChecker(item){
+    for(let i =0; i<compareList.length; i++){
+        if(item == colList[i]){
+            correctColors++;
+        }
+    }
+    }
+
+function checkPosition(){
+    if(compareList[0] == colList[0]){
+      correctPosition++;
+      }
+    if(compareList[1] == colList[1]){
+      correctPosition++;
+      }
+    if(compareList[2] == colList[2]){
+      correctPosition++;
+      }
+    if(compareList[3] == colList[3]){
+      correctPosition++;
+    }
+      console.log("correct position: ", correctPosition);
+  
+  if(correctPosition == 4){
+     
+      let r1 = colList[0];
+      let r2 = colList[1];
+      let r3 = colList[2];
+      let r4 = colList[3];
+    
+    rnd1.style.backgroundColor = r1;
+    rnd2.style.backgroundColor = r2;
+    rnd3.style.backgroundColor = r3;
+    rnd4.style.backgroundColor = r4;
+
+    rnd1.innerHTML = "";
+    rnd2.innerHTML = "";
+    rnd3.innerHTML = "";
+    rnd4.innerHTML = "";
+    alert("Well done!");
+  }
+  //checking for color occurance in pc colors list -> colorChecker funtion below
+  if(correctPosition != 4){
+      let c = compareList.map(colorChecker);
+      resultActions();
+      
+
+      
+  }
+
+  }
+ 
+
+
+
+
+//3. First Validation: Checking if colors are filled in and if repeating 
+
+
+
+
+function validate(){
+    
+    let f1 = true;
+    let c = 4;
+    let listTocheck = false;
+    correctPosition = 0;
+    correctColors = 0;
+
+
+
+    if(f1 == true) {
+        if(el_a.style.backgroundColor != "yellow" && el_a.style.backgroundColor != "blue" && el_a.style.backgroundColor != "green" && el_a.style.backgroundColor != "red" &&  el_a.style.backgroundColor != "orange"  &&  el_a.style.backgroundColor != "black"){
+            console.log("choose color for the first cell!")
+            c= c-1;
+        }
+        if(el_b.style.backgroundColor != "yellow" && el_b.style.backgroundColor != "blue" && el_b.style.backgroundColor != "green" && el_b.style.backgroundColor != "red" &&  el_b.style.backgroundColor != "orange"  &&  el_b.style.backgroundColor != "black"){
+            console.log("choose color for the second cell!")
+            c = c-1;
+        }
+        if(el_c.style.backgroundColor != "yellow" && el_c.style.backgroundColor != "blue" && el_c.style.backgroundColor != "green" && el_c.style.backgroundColor != "red" &&  el_c.style.backgroundColor != "orange"  &&  el_c.style.backgroundColor != "black"){
+            console.log("choose color for the third cell!")
+            c = c-1;
+        }
+        if(el_d.style.backgroundColor != "yellow" && el_d.style.backgroundColor != "blue" && el_d.style.backgroundColor != "green" && el_d.style.backgroundColor != "red" &&  el_d.style.backgroundColor != "orange"  &&  el_d.style.backgroundColor != "black"){
+            console.log("choose color for the fourth cell!")
+            c = c-1;
+        }
+    }
+
+    if (c == 4){
+        if(el_a.style.backgroundColor == el_b.style.backgroundColor || el_a.style.backgroundColor == el_c.style.backgroundColor  ||  el_a.style.backgroundColor == el_d.style.backgroundColor || el_b.style.backgroundColor == el_c.style.backgroundColor || el_c.style.backgroundColor ==el_b.style.backgroundColor || el_c.style.backgroundColor == el_d.style.backgroundColor || el_b.style.backgroundColor  == el_d.style.backgroundColor){
+            alert('you have to use different colors to fill in the row!!')
+        }
+    else{
+            compareList[0] = el_a.style.backgroundColor;
+            compareList[1] = el_b.style.backgroundColor;
+            compareList[2] = el_c.style.backgroundColor;
+            compareList[3] = el_d.style.backgroundColor;
+            console.log(compareList);
+            listTocheck = true;
+            document.getElementById('validate1').style.display = "none";
+            }
+
+        }
+// no continue for the function to count if colors are in the pc array // well placed
+     if(listTocheck == true){
+        //calling the function to check if color position matches the pc color
+        checkPosition();
+     }   
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
