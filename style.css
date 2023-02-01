@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
 body{
     padding: 0;
     background: rgb(255,255,255);
@@ -11,11 +14,261 @@ body{
 
 .All{
    
+    display: grid; 
+    grid-template-columns: 0.8fr 1.4fr 0.8fr; 
+    grid-template-rows: 1fr; 
+    gap: 3px 8px; 
+    grid-template-areas: 
+      ". . ."; 
+}
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #42567d 0%,
+    #5e8b9b 29%,
+    #a7e2e294 67%,
+    #346990 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* left part */
+
+.left{
+    height: 800px;
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 50px;
+  
+}
+
+
+.tit{
+    font-family: 'Ubuntu', sans-serif;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    margin: 0 auto;
+    justify-content:center;
+    align-items:center;
+    font-size: 50px;
+    color: blue;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 0 0 8px #316472;
+   
+    
+
+}
+
+
+/*Right container */
+.right{
+    height: 700px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: -50px;
+    display: flex;
+    margin-right: 40px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.info{
+    height: 40px;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: -60px;
+    color: white;
+    align-items: center;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    font-size: 30px;
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow: 1px 5px 2px rgba(122, 171, 204, 1);
+}
+
+.info:hover{
+    cursor: pointer;
+}
+
+
+.bounce-in-top {
+	-webkit-animation: bounce-in-top 1.1s both;
+	        animation: bounce-in-top 1.1s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+
+
+
+.showInfo{
+    height: 500px;
+    width: 100%;
+    margin-bottom: 50px;
     
 }
+.infoText{
+    display: none;
+    color: rgb(255, 255, 255);
+}
+
+.cont_ico{
+    width: 30Px;
+    height: 30px;
+}
+.musicBtn{
+    box-sizing: border-box;
+    width: 90px;
+    height: 70px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgb(50, 111, 176) 0, rgba(148, 185, 214, 0) 100%);
+    border-radius: 125px;
+    transition: all .3s;
+    color: white;
+}
+
+
+.musicBtn:hover {
+  box-shadow: rgba(94, 181, 181, 0.2) 0 3px 15px inset, rgba(54, 122, 189, 0.1) 0 3px 5px, rgba(92, 181, 197, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+
+ 
+
+
 
 .infoClick{
     display: flex;
@@ -191,6 +444,11 @@ body{
     margin-left: 5px;
 }
 
+.di1:hover{
+    cursor: pointer;
+
+}
+
 
 
 
@@ -253,3 +511,8 @@ background-color: black;
     }
 }
     
+
+
+
+
+
