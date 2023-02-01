@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,142 +14,194 @@
 
 <div class="All"> 
 
-
-    
-<div class="middleGameBorder">
-    <div class="infoClick"> 
-        <div class="subInfo"> INFO </div>
-        
+    <div class="left">
+        <div class="tit animate-charcter elem_1">M</div>
+        <div class="tit animate-charcter elem_1">A</div>
+        <div class="tit animate-charcter elem_1">S</div>
+        <div class="tit animate-charcter elem_1">T</div>
+        <div class="tit animate-charcter elem_1">E</div>
+        <div class="tit animate-charcter elem_1">R</div>
+        <div class="tit animate-charcter elem_1">M</div>
+        <div class="tit animate-charcter elem_1">I</div>
+        <div class="tit animate-charcter elem_1">N</div>
+        <div class="tit animate-charcter elem_1">D</div>
     </div>
-<div class="game">
-    <div class="container">
-        <div class="pc">
-            <div class="pc_up">
-                <div class="random c1" id="c1"><h1>?</h1></div>
-                <div class="random c2" id="c2"><h1>?</h1></div>
-                <div class="random c3" id="c3"><h1>?</h1></div>
-                <div class="random c4" id="c4"><h1>?</h1></div>
+
+
+
+
+    <div class="mid">
+
+        <div class="middleGameBorder">
+           
+        <div class="game">
+            <div class="container">
+                <div class="pc">
+                    <div class="pc_up">
+                        <div class="random c1" id="c1"><h1>?</h1></div>
+                        <div class="random c2" id="c2"><h1>?</h1></div>
+                        <div class="random c3" id="c3"><h1>?</h1></div>
+                        <div class="random c4" id="c4"><h1>?</h1></div>
+                    </div>
+                <div class="pc_down">
+                    <button id="play" class="playBtn"> Play</button>
+                </div>
             </div>
-        <div class="pc_down">
-            <button id="play" class="playBtn"> Play</button>
+        
+            <div class="try1 currentRow " id="m1">
+        
+                <div class="random r VisibilityY" id="tr_1_A" onclick="try1(this)"></div>
+                <div class="random r VisibilityY" id="tr_1_B" onclick="try1(this)"></div>
+                <div class="random r VisibilityY" id="tr_1_C" onclick="try1(this)"></div>
+                <div class="random r VisibilityY" id="tr_1_D" onclick="try1(this)"></div>
+                <div class="result dontShow" id="showA" >
+                    <div class="resA" id="rA_1"></div>
+                    <div class="resB" id="rB_1"></div>
+                    <div class="resC" id="rC_1"></div>
+                    <div class="resD" id="rD_1"></div>
+            </div>
+                <br>
+                <div>
+                    <button class="valBtn" id="validate1" style="display: none" onclick="validate()"> Validate</button>
+                </div>
+                
+            </div>
+            <br>
+            <div class="try2" id="m2">
+                
+                <div class="random a1 VisibilityY" id="tr_2_A"  onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_2_B"  onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_2_C"  onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_2_D"  onclick="try1(this)"></div>
+                <div class="result dontShow" id="showB" >
+                    <div class="resA" id="rA_2"></div>
+                    <div class="resB" id="rB_2"></div>
+                    <div class="resC" id="rC_2"></div>
+                    <div class="resD" id="rD_2"></div>
+                </div>
+            </div>
+            <br>
+          
+            <div><button id="validate2" style="display: none" class="valBtn" onclick="validate()"> Validate</button></div>
+            
+            <div class="try3">
+                
+                <div class="random a1 VisibilityY" id="tr_3_A" onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_3_B" onclick="try1(this)"></div>
+                <div class="random a1 VidibilityY" id="tr_3_C" onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_3_D" onclick="try1(this)"></div>
+                    <div class="result dontShow" id="showC" >
+                        <div class="resA" id="rA_3"></div>
+                        <div class="resB" id="rB_3"></div>
+                        <div class="resC" id="rC_3"></div>
+                        <div class="resD" id="rD_3"></div>
+                </div>
+            </div>
+            <br>
+        
+             <div><button class="valBtn" id="validate3" class="valBtn" style="display: none" onclick="validate()"> Validate</button></div>
+           
+            <div class="try4">
+                
+                <div class="random a1 VisibilityY" id="tr_4_A"  onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_4_B"  onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_4_C"  onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_4_D"  onclick="try1(this)"></div>
+                <div class="result dontShow" id="showD" >
+                    <div class="resA" id="rA_4"></div>
+                    <div class="resB" id="rB_4"></div>
+                    <div class="resC" id="rC_4"></div>
+                    <div class="resD" id="rD_4"></div>
+                </div>
+            </div>
+            <br>
+            <div><button id="validate4" class="valBtn" style="display: none" onclick="validate()"> Validate</button></div>
+            <div class="try5">
+              
+                <div class="random a1 VisibilityY" id="tr_5_A"  onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_5_B"  onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_5_C"  onclick="try1(this)"></div>
+                <div class="random a1 VisibilityY" id="tr_5_D"  onclick="try1(this)"></div>
+                <div class="result dontShow" id="showE" >
+                    <div class="resA" id="rA_5"></div>
+                    <div class="resB" id="rB_5"></div>
+                    <div class="resC" id="rC_5"></div>
+                    <div class="resD" id="rD_5"></div>
+                </div>
+            </div>
+            <br>
+            <div><button id="validate5" class="valBtn" style="display: none" onclick="validate()"> Validate</button></div>
+        
+        
+        
+            <div id="picker">
+                <div class="di1" id="red" style="background: red" onclick="choose(this)"></div>
+                <div class="di1" id="blue" style="background: blue"onclick="choose(this)"></div>
+                <div class="di1" id="green" style="background: green"onclick="choose(this)"></div>              
+                <div class="di1" id="yellow" style="background: yellow"onclick="choose(this)"></div>
+                <div class="di1" id="black" style="background: black" onclick="choose(this)"></div>
+                <div class="di1" id="orange" style="background: orange"onclick="choose(this)"></div>
+            </div>
+        
+        
+        
         </div>
-    </div>
+        
+        
+        
+        
+        </div>
+        
+        
+        </div>
+        
+        </div>
+        
+        
+        
+        
+        
+        </div>
 
-    <div class="try1 currentRow " id="m1">
-
-        <div class="random r VisibilityY" id="tr_1_A" onclick="try1(this)"></div>
-        <div class="random r VisibilityY" id="tr_1_B" onclick="try1(this)"></div>
-        <div class="random r VisibilityY" id="tr_1_C" onclick="try1(this)"></div>
-        <div class="random r VisibilityY" id="tr_1_D" onclick="try1(this)"></div>
-        <div class="result dontShow" id="showA" >
-            <div class="resA" id="rA_1"></div>
-            <div class="resB" id="rB_1"></div>
-            <div class="resC" id="rC_1"></div>
-            <div class="resD" id="rD_1"></div>
-    </div>
+<div class="right">
+    <div class="info" id="info"> INFO </div>
+    <div class="showInfo" id="showInfo">
+        <div class="infoText  bounce-in-top" id="infoText">
+        1. Player must guess the correct sequence of four colors from a selection of six colors
         <br>
-        <div>
-            <button class="valBtn" id="validate1" style="display: none" onclick="validate()"> Validate</button>
-        </div>
+        <br>
+        2.Correct sequence is hidden behind ? elements in the first row
+        <br>
+        <br>
+        3.Each row proposed by the player has to contain different colors
+        <br>
+        <br>
+        4. Player has five chances to guess the correct sequence
+        <br>
+        <br>
+        5. After each submission, the player will receive an indication of how close they are to the correct sequence: 
+        <br>
+        <br> * grey for a correct color in the wrong position
+        <br>
+        <br> * black for a correct color in the correct position.
+        <br>
+        <br>
+        <br>
         
-    </div>
-    <br>
-    <div class="try2" id="m2">
         
-        <div class="random a1 VisibilityY" id="tr_2_A"  onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_2_B"  onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_2_C"  onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_2_D"  onclick="try1(this)"></div>
-        <div class="result dontShow" id="showB" >
-            <div class="resA" id="rA_2"></div>
-            <div class="resB" id="rB_2"></div>
-            <div class="resC" id="rC_2"></div>
-            <div class="resD" id="rD_2"></div>
-        </div>
-    </div>
-    <br>
-  
-    <div><button id="validate2" style="display: none" class="valBtn" onclick="validate()"> Validate</button></div>
-    
-    <div class="try3">
-        
-        <div class="random a1 VisibilityY" id="tr_3_A" onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_3_B" onclick="try1(this)"></div>
-        <div class="random a1 VidibilityY" id="tr_3_C" onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_3_D" onclick="try1(this)"></div>
-            <div class="result dontShow" id="showC" >
-                <div class="resA" id="rA_3"></div>
-                <div class="resB" id="rB_3"></div>
-                <div class="resC" id="rC_3"></div>
-                <div class="resD" id="rD_3"></div>
-        </div>
-    </div>
-    <br>
-
-     <div><button class="valBtn" id="validate3" class="valBtn" style="display: none" onclick="validate()"> Validate</button></div>
-   
-    <div class="try4">
-        
-        <div class="random a1 VisibilityY" id="tr_4_A"  onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_4_B"  onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_4_C"  onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_4_D"  onclick="try1(this)"></div>
-        <div class="result dontShow" id="showD" >
-            <div class="resA" id="rA_4"></div>
-            <div class="resB" id="rB_4"></div>
-            <div class="resC" id="rC_4"></div>
-            <div class="resD" id="rD_4"></div>
-        </div>
-    </div>
-    <br>
-    <div><button id="validate4" class="valBtn" style="display: none" onclick="validate()"> Validate</button></div>
-    <div class="try5">
-      
-        <div class="random a1 VisibilityY" id="tr_5_A"  onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_5_B"  onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_5_C"  onclick="try1(this)"></div>
-        <div class="random a1 VisibilityY" id="tr_5_D"  onclick="try1(this)"></div>
-        <div class="result dontShow" id="showE" >
-            <div class="resA" id="rA_5"></div>
-            <div class="resB" id="rB_5"></div>
-            <div class="resC" id="rC_5"></div>
-            <div class="resD" id="rD_5"></div>
-        </div>
-    </div>
-    <br>
-    <div><button id="validate5" class="valBtn" style="display: none" onclick="validate()"> Validate</button></div>
-
-
-
-    <div id="picker">
-        <div class="di1" id="red" style="background: red" onclick="choose(this)"></div>
-        <div class="di1" id="blue" style="background: blue"onclick="choose(this)"></div>
-        <div class="di1" id="green" style="background: green"onclick="choose(this)"></div>              
-        <div class="di1" id="yellow" style="background: yellow"onclick="choose(this)"></div>
-        <div class="di1" id="black" style="background: black" onclick="choose(this)"></div>
-        <div class="di1" id="orange" style="background: orange"onclick="choose(this)"></div>
-    </div>
-
-
-
+        <p> <br>CREATED BY  <a href="https://www.github.com/katadjina/" target="_blank"><img src="git.png" class="cont_ico"></a></p>
 </div>
-
-
-
-
-</div>
-
-
+    </div>
+    <div class="music">
+        <audio id="audio">
+            <source src="sound/music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <button class="musicBtn" id="music"> Sound ON &#9658;</button>
+    <div class="gamerules"></div>
 </div>
 
 </div>
-
-
-
-
-
-</div>
-
 
 
 
@@ -171,8 +221,29 @@
 
 
 <script>
+//sound
 
+let musicBtn = document.getElementById("music");
+let audio = document.getElementById("audio");
 
+let m = 0;
+
+musicBtn.addEventListener("click", function(){
+    if (m == 0){
+        audio.play();
+        m =1;
+        musicBtn.innerText = "Sound Off"
+    }
+    else{
+        audio.pause();
+        m = 0;
+        musicBtn.innerText = "Sound On"
+    }
+      
+    
+  
+    
+})
 //1. Play button click
 
 let rnd1 = document.getElementById("c1");
@@ -608,6 +679,24 @@ function validate(){
 }
 
 
+
+//info element
+let inf = document.getElementById("info");
+let infoText = document.getElementById("infoText");
+let onoff = 0;
+
+inf.addEventListener("click", function(){
+    if(onoff == 0){
+        infoText.style.display = "block"
+        onoff = 1;
+        inf.innerHTML = "CLOSE X"
+    }
+    else{
+        infoText.style.display= "none";
+        onoff = 0;
+        inf.innerHTML = "INFO"
+    }
+})
 
 
 
