@@ -1,9 +1,9 @@
 #MASTERMIND
 
--JS/ CSS/ HTML
--Practice coding and problem-solving skills
--Game logic (user interaction, functions, conditional statements, loops)
--Designing game graphics/ user interface
+1. JS/ CSS/ HTML
+2. Practice coding and problem-solving skills
+3. Game logic (user interaction, functions, conditional statements, loops)
+4. Designing game graphics/ user interface
 
 GAME RULES 
 1. The user must guess the correct sequence of four colors from a selection of six colors
