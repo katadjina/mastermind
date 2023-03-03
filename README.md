@@ -13,3 +13,6 @@
 4. After each submission, the user will receive an indication of how close they are to the correct sequence:
 grey for a correct color in the wrong position, and black for a correct color in the correct position.
 5. If the user guesses the correct sequence within the five chances, they win the game.
+
+
+<img width="1495" alt="image" src="https://user-images.githubusercontent.com/94002120/222838600-8fd25f7e-fdec-40fb-a6b7-01bda2732b86.png">
